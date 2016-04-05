@@ -1,0 +1,25 @@
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_back"
+    android:id="@+id/search_viewpager"
+    tools:context="com.boma.winshift.SearchActivity">
+
+
+        <android.support.v4.view.PagerTitleStripV22
+            android:id="@+id/title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_gravity="top"
+            android:layout_margin="200dp"
+            android:background="@color/hint_white"/>
+
+
+
+
+
+</android.support.v4.view.ViewPager>

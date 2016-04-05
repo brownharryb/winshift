@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_front_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.boma.winshift.CircleImageView
+            android:id="@+id/add_someone_circleview"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/bh"
+            app:civ_border_width="5dp"
+            app:civ_border_color="@color/hint_white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/image_change_hint"
+            android:textColor="@color/hint_white" />
+
+
+            <EditText
+                android:id="@+id/add_someone_name"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/front_main_margin"
+                android:hint="@string/full_name_hint"
+                android:textColorHint="@color/hint_white"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/add_someone_dept"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/front_main_margin"
+                android:hint="@string/add_someone_department"
+                android:textColorHint="@color/hint_white"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+            <EditText
+                android:id="@+id/add_someone_intercom"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/front_main_margin"
+                android:hint="@string/add_someone_intercom"
+                android:textColorHint="@color/hint_white"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:maxLength="4"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/hint_white"
+                android:text="@string/optional_hint"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="@dimen/edit_text_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/hint_white"
+                android:text="@string/optional_hint"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <EditText
+            android:id="@+id/add_someone_mobile"
+            android:maxLines="1"
+            android:layout_width="@dimen/edit_text_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="phone"
+            android:ems="10"
+            android:hint="@string/add_someone_number_hint"
+            android:gravity="center"
+            android:textColorHint="@color/hint_white"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="@string/add_someone_shift_hint"
+            android:textColor="@color/hint_white" />
+
+        <Spinner
+            android:id="@+id/add_someone_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_700_color"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/add_someone_continue_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/front_button"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@color/primary_700_color" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

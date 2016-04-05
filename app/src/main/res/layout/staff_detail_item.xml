@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:background="@color/hint_white">
+
+
+    <com.boma.winshift.CircleImageView
+        android:id="@+id/staff_item_image_view"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/bh"
+        android:layout_margin="8dp"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/hint_white"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:id="@+id/staff_name_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Staff Name"/>
+        <TextView
+            android:id="@+id/staff_current_shift_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_white"
+            android:textSize="16sp"
+            android:text="Current Shift:Morning"/>
+        <TextView
+            android:id="@+id/staff_intercom_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_white"
+            android:textSize="16sp"
+            android:text="Intercom:0000"/>
+        <TextView
+            android:id="@+id/staff_section_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_white"
+            android:textSize="16sp"
+            android:text="section:qaqc"/>
+        <TextView
+            android:id="@+id/staff_company_list_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint_white"
+            android:textSize="16sp"
+            android:text="Company:Indorama"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

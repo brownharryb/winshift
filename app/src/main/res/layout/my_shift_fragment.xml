@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="@dimen/search_box_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/hint_white"
+            android:text="@string/your_current_shift_label"
+            android:paddingBottom="20dp"/>
+        <TextView
+            android:id="@+id/current_shift_label"
+            android:layout_width="@dimen/search_box_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/my_shift_label_hint"
+            android:textSize="30sp"
+            android:paddingBottom="20dp"/>
+        <TextView
+            android:layout_width="@dimen/search_box_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/hint_white"
+            android:text="@string/my_shift_label_hint"
+            android:paddingBottom="20dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/my_shift_show_date_btn"
+            android:layout_width="@dimen/button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/hint_white"
+            android:text="@string/get_colleagues_date"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="@dimen/search_box_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/hint_white"
+            android:text="@string/or_edit_my_info"
+            android:padding="20dp"/>
+
+        <Button
+            android:id="@+id/edit_my_info_btn"
+            android:layout_width="@dimen/button_text_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/hint_white"
+            android:text="@string/edit_my_info"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</RelativeLayout>
